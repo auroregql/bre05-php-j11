@@ -12,6 +12,14 @@ class Warrior extends Character
         $this->name = $name;
         $this->energy = $energy;
     }
+    
+    public function getEnergy(): int {
+        return $this->energy;
+    }
+
+    public function setEnergy(int $energy): void {
+        $this->energy = $energy;
+    }
 
     public function present(): string {
         return $this->introduce()

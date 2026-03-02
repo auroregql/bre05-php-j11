@@ -12,7 +12,16 @@ class Mage extends Character
         $this->name = $name;
         $this->mana = $mana;
     }
+    
+    public function getMana(): int {
+        return $this->mana;
+    }
 
+    public function setMana(int $mana): void {
+        $this->mana = $mana;
+
+    }
+    
     public function present(): string {
         return $this->introduce()
             . " | Vie : $this->life | Mana : $this->mana";
